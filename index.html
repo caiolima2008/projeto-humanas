@@ -27,6 +27,16 @@
             color: #60a5fa;
             transition: color 0.2s;
         }
+
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -36,10 +46,18 @@
         <div class="max-w-4xl mx-auto">
             <i class="fas fa-anchor text-5xl mb-6 text-blue-400"></i>
             <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Escola de Formação de Oficiais da Marinha Mercante</h1>
-            <p class="text-xl text-slate-300 font-light">Guia completo para o Processo Seletivo EFOMM/2026</p>
-            <div class="mt-8">
-                <a href="https://www.marinha.mil.br/ciaga/node/161" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg inline-flex items-center gap-2">
-                    <i class="fas fa-external-link-alt"></i> Site Oficial da Marinha
+            <p class="text-xl text-slate-300 font-light mb-8">Guia completo para o Processo Seletivo EFOMM/2026</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Botão do Edital Completo (Destaque) -->
+                <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/edital%20efomm.pdf" 
+                   target="_blank" 
+                   class="btn-pulse bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg flex items-center justify-center gap-2">
+                    <i class="fas fa-file-pdf text-xl"></i> ACESSAR EDITAL COMPLETO 2026
+                </a>
+
+                <a href="https://www.marinha.mil.br/ciaga/node/161" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg flex items-center justify-center gap-2">
+                    <i class="fas fa-external-link-alt"></i> Site Oficial CIAGA
                 </a>
             </div>
         </div>
@@ -52,7 +70,7 @@
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
                 <i class="fas fa-user-check text-3xl text-blue-600 mb-4"></i>
                 <h3 class="font-bold text-lg mb-2">Requisitos Básicos</h3>
-                <p class="text-slate-600 text-sm">Brasileiro nato, 17-23 anos (em 01/01/26) e Ensino Médio completo.</p>
+                <p class="text-slate-600 text-sm">Brasileiro nato, 17-23 anos (em 01/01 do ano de ingresso) e Ensino Médio completo.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
                 <i class="fas fa-map-marker-alt text-3xl text-blue-600 mb-4"></i>
@@ -124,64 +142,77 @@
 
         <!-- Downloads / Materiais -->
         <section id="downloads" class="text-center">
-    <h2 class="text-3xl font-bold mb-4">Editais Verticalizados</h2>
-    <p class="text-slate-600 mb-8">Organize seus estudos com os cronogramas detalhados de cada disciplina.</p>
-    
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        
-        <!-- Português -->
-        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
-            <i class="fas fa-language text-blue-500 text-3xl mb-4"></i>
-            <h4 class="font-bold mb-3">Língua Portuguesa</h4>
-            <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Portugu%C3%AAs.pdf"
-               download
-               class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
-                <i class="fas fa-download mr-1"></i> Download PDF
-            </a>
-        </div>
+            <h2 class="text-3xl font-bold mb-4">Materiais de Estudo</h2>
+            <p class="text-slate-600 mb-8">Organize seus estudos com os cronogramas detalhados e o edital oficial.</p>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                
+                <!-- Português -->
+                <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
+                    <i class="fas fa-language text-blue-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-3">Português</h4>
+                    <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Portugu%C3%AAs.pdf"
+                       download
+                       class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
+                        <i class="fas fa-download mr-1"></i> Verticalizado
+                    </a>
+                </div>
 
-        <!-- Inglês -->
-        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
-            <i class="fas fa-globe-americas text-emerald-500 text-3xl mb-4"></i>
-            <h4 class="font-bold mb-3">Língua Inglesa</h4>
-            <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Ingl%C3%AAs.pdf"
-               download
-               class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
-                <i class="fas fa-download mr-1"></i> Download PDF
-            </a>
-        </div>
+                <!-- Inglês -->
+                <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
+                    <i class="fas fa-globe-americas text-emerald-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-3">Inglês</h4>
+                    <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Ingl%C3%AAs.pdf"
+                       download
+                       class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
+                        <i class="fas fa-download mr-1"></i> Verticalizado
+                    </a>
+                </div>
 
-        <!-- Matemática -->
-        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
-            <i class="fas fa-calculator text-orange-500 text-3xl mb-4"></i>
-            <h4 class="font-bold mb-3">Matemática</h4>
-            <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Matem%C3%A1tica.pdf"
-               download
-               class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
-                <i class="fas fa-download mr-1"></i> Download PDF
-            </a>
-        </div>
+                <!-- Matemática -->
+                <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
+                    <i class="fas fa-calculator text-orange-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-3">Matemática</h4>
+                    <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20Matem%C3%A1tica.pdf"
+                       download
+                       class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
+                        <i class="fas fa-download mr-1"></i> Verticalizado
+                    </a>
+                </div>
 
-        <!-- Física -->
-        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
-            <i class="fas fa-atom text-purple-500 text-3xl mb-4"></i>
-            <h4 class="font-bold mb-3">Física</h4>
-            <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20F%C3%ADsica.pdf"
-               download
-               class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
-                <i class="fas fa-download mr-1"></i> Download PDF
-            </a>
-        </div>
+                <!-- Física -->
+                <div class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all">
+                    <i class="fas fa-atom text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold mb-3">Física</h4>
+                    <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/Edital%20Verticalizado_%20F%C3%ADsica.pdf"
+                       download
+                       class="inline-block w-full bg-slate-800 text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-700">
+                        <i class="fas fa-download mr-1"></i> Verticalizado
+                    </a>
+                </div>
+            </div>
 
-    </div>
-    
-    <div class="mt-12 p-6 bg-slate-100 rounded-2xl border border-dashed border-slate-300">
-        <p class="text-sm text-slate-600 mb-4 font-medium">Precisa acessar o edital oficial e os documentos da Marinha?</p>
-        <a href="https://www.marinha.mil.br/ciaga/node/161" target="_blank" class="text-blue-600 font-bold hover:underline">
-            Clique aqui para ir ao portal CIAGA <i class="fas fa-external-link-alt ml-1"></i>
-        </a>
-    </div>
-</section>
+            <!-- Card Destaque Edital -->
+            <div class="bg-emerald-50 border-2 border-emerald-200 p-8 rounded-3xl shadow-inner">
+                <i class="fas fa-file-contract text-4xl text-emerald-600 mb-4"></i>
+                <h3 class="text-2xl font-bold text-emerald-900 mb-2">Edital Completo EFOMM 2026</h3>
+                <p class="text-emerald-700 mb-6 max-w-2xl mx-auto">
+                    A leitura do edital é indispensável. Clique no botão abaixo para abrir o documento oficial com todas as normas e cronogramas.
+                </p>
+                <a href="https://raw.githubusercontent.com/caiolima2008/projeto-humanas/main/edital/edital%20efomm.pdf" 
+                   target="_blank" 
+                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-10 rounded-xl transition-all shadow-md">
+                    <i class="fas fa-file-pdf"></i> Abrir Edital PDF
+                </a>
+            </div>
+            
+            <div class="mt-12 p-6 bg-slate-100 rounded-2xl border border-dashed border-slate-300">
+                <p class="text-sm text-slate-600 mb-4 font-medium">Dúvidas sobre o processo? Acesse o portal oficial CIAGA.</p>
+                <a href="https://www.marinha.mil.br/ciaga/node/161" target="_blank" class="text-blue-600 font-bold hover:underline">
+                    Portal CIAGA Marinha <i class="fas fa-external-link-alt ml-1"></i>
+                </a>
+            </div>
+        </section>
 
     </main>
 
