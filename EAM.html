@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia EAM 2026 - Carreira e Conteúdo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #001a33 0%, #003366 100%);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .motivation-icon {
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subject-badge {
+            background: rgba(30, 58, 138, 0.1);
+            color: #1e3a8a;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #cbd5e1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header/Hero -->
+    <header class="hero-gradient text-white py-20 px-6 text-center shadow-2xl">
+        <div class="max-w-4xl mx-auto">
+            <i class="fas fa-anchor text-6xl mb-6 text-yellow-500"></i>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">EAM 2026: Guia Completo</h1>
+            <p class="text-xl text-slate-300 font-light mb-8">Tudo sobre a carreira, os benefícios e o que estudar para vencer.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#inscricao" class="bg-yellow-500 hover:bg-yellow-600 text-blue-950 font-bold py-3 px-8 rounded-full transition-all shadow-lg flex items-center gap-2">
+                    <i class="fas fa-edit"></i> Quero me Inscrever
+                </a>
+                <a href="#materias" class="bg-white text-blue-900 font-bold py-3 px-8 rounded-full transition-all shadow-lg">
+                    O Que Estudar?
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        
+        <!-- SEÇÃO DE INSCRIÇÃO -->
+        <section id="inscricao" class="mb-24">
+            <div class="cta-box rounded-3xl p-8 md:p-12 text-center shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i class="fas fa-file-signature text-9xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-blue-950 mb-4">Inscrições Oficiais</h2>
+                <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+                    Acompanhe o edital e realize sua inscrição no site oficial da Marinha do Brasil. O botão abaixo leva você diretamente para a página do concurso.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <!-- Link atualizado para o site oficial da EAMES -->
+                    <a href="https://www.marinha.mil.br/eames/concurso/escolas-de-aprendizes-marinheiros" target="_blank" class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-10 rounded-2xl transition-all shadow-xl flex items-center gap-3 text-lg">
+                        <i class="fas fa-external-link-alt"></i> Ir para Página do Concurso
+                    </a>
+                    <div class="text-left bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <p class="text-xs font-bold text-blue-800 uppercase tracking-widest mb-1">Dica:</p>
+                        <p class="text-sm text-slate-600 italic">"Role até o final da página oficial para encontrar o botão de inscrição."</p>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-8">
+                    <i class="fas fa-info-circle"></i> O link acima redireciona para <strong>marinha.mil.br/eames</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Por que se inscrever? -->
+        <section class="mb-24 text-center">
+            <h2 class="text-3xl font-bold mb-12">Por que escolher a EAM?</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="space-y-4">
+                    <i class="fas fa-rocket text-4xl motivation-icon"></i>
+                    <h3 class="font-bold text-xl">Estabilidade Precoce</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Aos 18 anos, você já garante um emprego federal com plano de carreira definido.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-globe-americas text-4xl motivation-icon"></i>
+                    <h3 class="font-bold text-xl">Aventura e Viagens</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Conheça o litoral brasileiro e o mundo a bordo dos navios da Esquadra.</p>
+                </div>
+                <div class="space-y-4">
+                    <i class="fas fa-shield-alt text-4xl motivation-icon"></i>
+                    <h3 class="font-bold text-xl">Orgulho e Propósito</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Servir à Pátria e proteger a "Amazônia Azul" traz honra inigualável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- O QUE CAI NA PROVA -->
+        <section id="materias" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Conteúdo Programático</h2>
+                <p class="text-slate-600 mt-2">A prova objetiva possui 50 questões de nível Ensino Médio.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Matemática -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 info-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-xl text-blue-900">Matemática</h3>
+                        <span class="subject-badge">15 Questões</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Conjuntos, Números Reais e Funções</li>
+                        <li>• Trigonometria e Geometria Plana/Espacial</li>
+                        <li>• Álgebra, Polinômios e Equações</li>
+                        <li>• Estatística e Probabilidade Básica</li>
+                    </ul>
+                </div>
+
+                <!-- Português -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 info-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-xl text-blue-900">Português</h3>
+                        <span class="subject-badge">15 Questões</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Compreensão e Interpretação de Textos</li>
+                        <li>• Gramática Aplicada (Sintaxe e Morfologia)</li>
+                        <li>• Ortografia, Acentuação e Pontuação</li>
+                        <li>• Coesão e Coerência Textual</li>
+                    </ul>
+                </div>
+
+                <!-- Ciências -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 info-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-xl text-blue-900">Ciências (Física/Química)</h3>
+                        <span class="subject-badge">15 Questões</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Mecânica, Termologia e Eletricidade básica</li>
+                        <li>• Estrutura Atômica e Tabela Periódica</li>
+                        <li>• Ligações Químicas e Reações</li>
+                        <li>• Ondas, Óptica e Acústica</li>
+                    </ul>
+                </div>
+
+                <!-- Inglês -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 info-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-bold text-xl text-blue-900">Inglês</h3>
+                        <span class="subject-badge">05 Questões</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Vocabulário e Compreensão de Textos Curtos</li>
+                        <li>• Tempos Verbais (Present, Past, Future)</li>
+                        <li>• Pronomes, Adjetivos e Preposições</li>
+                        <li>• Estruturas Gramaticais Básicas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios ao se formar -->
+        <section id="beneficios" class="bg-white rounded-3xl p-10 md:p-16 shadow-xl border border-slate-100 mb-24">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">Benefícios da Carreira</h2>
+                    <p class="text-slate-600 mb-8 italic">Após as 48 semanas de curso, a vida muda completamente:</p>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg"><i class="fas fa-briefcase-medical text-blue-700"></i></div>
+                            <div>
+                                <h4 class="font-bold">Assistência Médica e Odontológica</h4>
+                                <p class="text-slate-500 text-sm">Atendimento completo para o militar e seus familiares.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-2 rounded-lg"><i class="fas fa-university text-blue-700"></i></div>
+                            <div>
+                                <h4 class="font-bold">Especialização Técnica</h4>
+                                <p class="text-slate-500 text-sm">Curso de formação técnica gratuita em áreas estratégicas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4 text-white">
+                    <div class="bg-blue-900 p-6 rounded-2xl flex flex-col justify-center items-center text-center">
+                        <span class="text-2xl font-bold">100%</span>
+                        <span class="text-[10px] uppercase mt-2 opacity-80 font-bold tracking-widest">Estabilidade</span>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-2xl flex flex-col justify-center items-center text-center">
+                        <i class="fas fa-utensils text-2xl mb-2 text-yellow-500"></i>
+                        <span class="text-[10px] uppercase opacity-80 font-bold tracking-widest">Alimentação</span>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-2xl flex flex-col justify-center items-center text-center">
+                        <i class="fas fa-tshirt text-2xl mb-2 text-yellow-500"></i>
+                        <span class="text-[10px] uppercase opacity-80 font-bold tracking-widest">Uniformes</span>
+                    </div>
+                    <div class="bg-blue-900 p-6 rounded-2xl flex flex-col justify-center items-center text-center">
+                        <i class="fas fa-piggy-bank text-2xl mb-2 text-yellow-500"></i>
+                        <span class="text-[10px] uppercase opacity-80 font-bold tracking-widest">Aposentadoria</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto text-sm">
+            <p>© 2025 - Guia EAM | Carreira Militar Naval</p>
+            <p class="text-xs mt-2 opacity-50 italic">Informativo independente. Consulte sempre o site oficial da Marinha.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
